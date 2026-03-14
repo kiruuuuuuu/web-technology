@@ -41,5 +41,3 @@ This repo can later include JavaScript examples for:
 * Manipulating the DOM
 * Handling user input and form validation
 * Basic animations and interactive UI elements
-
-You can add a `js/` folder and create `.js` files that are linked from the HTML demos.
