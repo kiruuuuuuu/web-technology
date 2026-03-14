@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>example of forms with table</title>
+</head>
+<body>
+    <table border="1" height="200" width="900">
+        <form>
+        <tr>
+            <th>
+                <label>username:</label>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <label>email verification:</label>
+                <br><br><br><br><br><br><br><br><br>
+                <label>date and time</label>
+                <br><br>
+                <label>contact details</label>
+                <br><br>
+                <label>age</label>
+                <br><br>
+                <label>gender:</label>
+                <br><br>
+                <label>language:</label>
+                <br><br>
+                <label>places</label>
+                <br><br>
+
+            </th>
+            <th>
+            <input type="text" name="fname" placeholder="enter first name">
+            <input type="text" name="lname" placeholder="enter last name">
+            <br><br>
+            <input type="email" name="mail" placeholder="enter email">
+            <input type="password" name="pswd" placeholder="enter password">
+            <br><br><br>
+            <input type="date" name="date">
+            <input type="time" name="time">
+            <input type="month" name="month">
+            <input type="datetime-local" name="datetime">
+            <input type="week" name="week">
+            <br><br><br>
+            <input type="tel" name="contact" placeholder="enter contact number" pattern="[6-9]{1}[0-9]{9}">
+            <input type="url" name="url" aria-placeholder="enter website adress">
+            <input type="search" name="search" placeholder="enter something...!">
+            <br><br><br>
+            <input type="number" name="age" min="0" max="99">
+            <input type="range" name="count" min="0" max="9">
+            <input type="color" name="colorvalue">
+            <input type="file" name="file">
+            <br><br><br>
+            <label for="m">male</label>
+            <input type="radio" name="gender" value="male" id="m">
+            <label for="f">female</label>
+            <input type="radio" name="gender" value="female" id="f">
+            <label for="o">others</label>
+            <input type="radio" name="gender" value="others" id="o">
+            <br><br><br>
+            <label for="e">english</label>
+            <input type="checkbox" name="lang" value="eng" id="e">
+            <label for="k">kannada</label>
+            <input type="checkbox" name="lang" value="kan" id="k">
+            <label for="ot">others</label>
+            <input type="checkbox" name="lang" value="others" id="ot">
+            <br><br><br>
+            <select name="places">
+            <option value="ban">bangalore</option>
+            <option value="mys">mysore</option>
+            <option value="man">mangalore</option>
+            <option value="goa">goa</option>
+            </select>
+            <br><br><br>
+            <textarea name="comment" placeholder="comment" rows="5" cols="50"></textarea>
+            <br><br><br>
+            <input type="reset" value="undo">
+            <input type="submit" value="register">
+            </th>
+        </tr>
+        </form>
+    </table>
+</body>
+</html>

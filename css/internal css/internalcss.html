@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internal css</title>
+    <style>
+        /* element selector*/
+        h1{
+            color: blue;
+        }
+        /* id selector*/
+        #abc{
+            color: red;
+        }
+        /* class selector*/
+        .xyz{
+            color: green;
+        }
+        /* group selector*/
+        h3, h4{
+            color: aqua;
+            text-align: center;
+        }
+        /* universal selector*/
+        *{
+            border-color: black;
+        }
+        /* attribute selector*/
+        input[type="password"]{
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+    <h1>internal css</h1>
+    <h1>element selector</h1>
+    <h2 id="abc">id selector</h2>
+    <p id="abc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi odit totam quo quisquam molestiae nam rem autem voluptas saepe maxime?</p>
+    <h3 class="xyz">class selector</h3>
+    <p class="xyz"></p>
+    <h3>group selector</h3>
+   
+    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint unde necessitatibus saepe error quo consequuntur perferendis et corrupti tempore explicabo sunt officiis odio rem, quam maiores est aut, quas iste.</h4>
+    <input type="text" placeholder="enter name">
+    <input type="email" placeholder="enter gmail">
+    <input type="password" placeholder="enter password" disabled>
+</body>
+</html>

@@ -1,0 +1,29 @@
+h1{
+    text-align: center;
+    text-shadow: 10px 10px 5px rgb(247, 6, 6);
+    font-family: sans-serif;
+    color: red;
+    text-transform: uppercase;
+}
+.para1{
+    width: 70%;
+    margin: auto;
+    text-align: justify;
+    height: 200px;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: sans-serif;
+    font-variant: small-caps;
+
+    text-decoration: underline 3px blue dashed; /* text decoration line, thickness,color,style */
+    
+    border-style: double;
+    border-width: 5px;
+    border-color: rgb(248, 10, 10);
+
+    overflow: auto;
+    box-shadow: 10px 10px 5px grey
+    
+    ;
+}

@@ -1,0 +1,15 @@
+*{
+    text-align: center;
+}
+#hardcode{
+    color: white;
+    background-color: orangered;
+    
+}
+.hexa{
+    color: #1234ef;
+}
+.deci{
+    color: rgb(255, 255, 255);
+    background-color: rgb(2, 68, 2);
+}

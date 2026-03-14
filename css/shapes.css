@@ -1,0 +1,86 @@
+h1{
+    text-align: center;
+}
+.square{
+    border: solid 2px red;
+    height: 150px;
+    width: 150px;
+    background: red;
+}
+.rect{
+    border: solid 2px blue;
+    height: 150px;
+    width: 250px;
+    background: blue;
+}
+.circle{
+    border: solid 2px rgb(29, 43, 29);
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background: rgb(28, 32, 28);
+}
+.oval{
+    border: solid 2px yellow;
+    height: 200px;
+    width: 400px;
+    border-radius: 50%;
+    background: yellow;
+}
+.leaf{
+    border: solid 2px darkgreen;
+    height: 250px;
+    width: 150px;
+    border-top-left-radius: 95%;
+    border-bottom-right-radius: 95%;
+    background: darkgreen;
+}
+.cube{
+    border: solid 2px ;
+    height: 150px;
+    width: 150px;
+    border-top: solid 100px red;
+    border-right: solid 100px yellow;
+    border-bottom: solid 100px blue;
+    border-left: solid 100px green;
+}
+.chatbox{
+    border: solid 20px teal;
+    height: 100px;
+    width: 100px;
+    border-radius: 0% 100% 100% 100%;
+    background: teal;
+}
+.transform{
+    display: block;
+    margin: 10vh auto;
+    height: 100px;
+   /* transform: rotate(80deg);*/
+   /*transform: rotateX(60deg);*/
+   /*transform: rotateY(60deg);*/
+   /*transform: skew(30deg);*/
+   /*transform: scale(1.5);*/
+   transform: scale(1.5) skew(30deg) rotate(90deg);
+}
+.filter{
+    display: block;
+    margin: auto;
+    height: 100px;
+   /* box-shadow: 10px 10px 5px grey;*/
+    /*filter: drop-shadow(10px 10px 5px grey);
+    filter: brightness(100%);
+    filter: contrast(50%);
+    filter: saturate(70%);*/
+    filter: drop-shadow(10px 10px 5px grey) brightness(100%) saturate(110%) contrast(90%);
+
+}
+.triangle{
+    border: solid 2px black;
+    height: 0px;
+    width: 0px;
+    border-top: solid 100px white;
+    border-left: solid 100px white;
+    border-right: solid 100px white;
+    border-bottom: solid 100px rgb(214, 13, 13);
+    background: grey;
+}
