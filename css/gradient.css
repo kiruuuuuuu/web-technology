@@ -1,0 +1,100 @@
+*{
+    margin: 0; padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    justify-content: space-evenly;
+   
+}
+.box{
+    border: solid 1px black;
+    height: 200px;
+    width: 200px;
+}
+.color1{
+    background-image: linear-gradient(red, yellow);/* to top/to bottom/to topleft/etc*/
+}
+.color2{
+    background-image: radial-gradient(circle at bottom,red, yellow 50%, green);/* circle at right/circle at bottom etc*/
+}
+.color3{
+    background-image: conic-gradient(red , yellow,green,red);
+}
+.color4,.color5,.color6{
+    border-radius: 50%;
+}
+.color4{
+    background: repeating-linear-gradient(yellow,black 25%);
+}
+.color5{
+    background: repeating-radial-gradient(yellow,black 5%);
+}
+.color6{
+    background: repeating-conic-gradient(yellow , black 20%);
+}
+.container1{
+   display: flex;
+   justify-content: center;
+}
+.box1{
+    margin: 10vh auto;
+    border: solid 1px black;
+    height: 250px;
+    width: 350px;
+    background-image: linear-gradient(black 50%,yellow 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    place-content: center;
+}
+.container2{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2,auto);
+    
+}
+.circle1{
+    border: solid 1px black;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-image: linear-gradient(to top ,black 50%,yellow 50%);
+}
+
+
+.box2{
+    border: solid 0px black;
+    height: 250px;
+    width: 250px;
+    border-top-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+    background: linear-gradient(to top left,yellow 50%,black 50%);
+    box-shadow: 2px 2px 5px grey;
+}
+.box3{
+    border: solid 0px black;
+    height: 100%;
+    width: 100%;
+    border-bottom-left-radius: 100%;
+    border-top-right-radius: 100%;
+    background: linear-gradient(to top left,yellow 50%,black 50%);
+    box-shadow: 2px 2px 5px grey;
+
+}
+h2{
+    text-align: center;
+    margin-top: 10vh;
+}
+.header{
+    background: linear-gradient(red,yellow);
+}
+.header_text{
+    text-align: center;
+    background: linear-gradient(yellow 50%,red 50%);
+    font-size: 40px;
+    background-clip: text;
+    padding: 5vh 0;
+    color: transparent;
+}

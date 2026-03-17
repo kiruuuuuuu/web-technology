@@ -171,3 +171,136 @@ h2{
         text-shadow: 2px 2px 5px grey;
     }
 }
+.bgimage3{
+    background: url(./images/imoflow-mango-3380630.jpg) no-repeat center/cover;
+    height: 100vh;
+    width: 100%;
+    p{
+        padding-left: 60vw;
+        padding-top: 30vh;
+        color: yellow;
+        font-size: 50px;
+        font-style: italic;
+        text-shadow: 2px 2px 5px grey;
+        text-align: end justify;
+        
+    }
+}
+    
+
+.bg4{
+    display: flex;
+    place-content: center;
+
+    .bgimage4{
+    margin: 5vh 2vw;
+    background: url(./images/mobile\ in\ hand.jpg) no-repeat center/cover;
+    height: 100vh;
+    width: 80%;
+    }
+    p{
+        margin: 20vh 0;
+        color: yellow;
+        font-size: 30px;
+        font-style: italic;
+        text-shadow: 2px 2px 5px grey;
+        text-align: justify center;
+    }
+    }
+
+
+.bgimage5{
+    margin-top: 10vh;
+    background: url(./images/simple\ burger.jpeg) no-repeat ;
+    height: 100vh;
+    width: 100%;
+    p{
+        padding-left: 40vw;
+        padding-top: 10vh;
+        color: yellow;
+        font-size: 50px;
+        font-style: italic;
+        text-shadow: 2px 2px 5px grey;
+        text-align: end justify;
+    }
+
+}
+
+.ft{
+    height: 40vh;
+    width: 100%;
+    display: grid;
+    background: red;
+    grid-template-columns: repeat(2,auto);
+    justify-content: space-evenly;
+    align-items: center;
+    ul{
+        list-style-type: none;
+    }
+    li{
+        font-style: italic;
+        color: yellow;
+        text-shadow: 2px 2px 5px grey;
+        font-size: large;
+    }
+    img{
+        height: 30px;
+        width: 30px;
+    }
+    a{
+        text-decoration: none;
+        color: yellow;
+        text-shadow: 2px 2px 5px grey;
+    }
+    p{
+        color: yellow;
+        font-size: large;
+        font-style: italic;
+        text-shadow: 2px 2px 5px grey;
+    }
+    
+}
+.ab{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: underline ;
+    }
+
+.bgimage6{
+    background: url(./images/menu\ page.jpg) no-repeat center/cover;
+    height: 100vh;
+    width: 100%;
+    ul{
+        display: grid;
+        justify-content: space-evenly;
+        grid-template-columns: repeat(3, auto);
+        align-items: center;
+    }
+    li{
+        list-style-type: none;
+        text-align: center;
+        font-size: large;
+        font-style: italic;
+        color: yellow;
+        text-shadow: 2px 2px 5px grey;
+    }
+    a{
+        text-decoration: none;
+        color: yellow;
+        text-shadow: 2px 2px 5px grey;
+    }
+    img{
+        margin-top: 15vh;
+        height: 200px;
+        width: 200px;
+    }
+}
+.copyright{
+    text-align: center;
+    color: yellow;
+    background: red;
+    font-size: large;
+    font-style: italic;
+    text-shadow: 2px 2px 5px grey;
+}
