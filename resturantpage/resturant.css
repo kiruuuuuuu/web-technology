@@ -10,6 +10,7 @@
     width: 100%;
     background: rgba(26, 24, 24, 0.267);
     position: fixed;
+    z-index: 2;
     
         ul{
             list-style-type: none;
@@ -307,11 +308,47 @@ h2{
     background: red;
 }
 .bgvideo{
-    margin-top: 15vh;
     height: 100vh;
     width: 100%;
     video{
         height: 100%;
         width: 100%;
     }
+}
+@media (min-width: 1px) and (max-width: 576px){
+    .features{
+    border: solid 0px black;
+    h2{
+        color: yellow;
+        font-size: 50px;
+        text-align: center;
+        place-content: center;
+        font-style: italic;
+        text-shadow: 2px 2px 5px grey;
+    }
+    ul{
+        margin-top: 5vh;
+        display: grid;
+        justify-content: space-evenly;
+        align-items: center;
+        grid-template-columns: repeat(1,auto);
+        column-gap: 100px;
+    }
+    li{
+        list-style-type: none;
+        p{
+            font-size: 30px;
+            font-weight: bold;
+            color: yellow;
+            text-shadow: 2px 2px 5px grey;
+            text-align: center;
+
+        }
+        img{
+            height: 200px;
+            width: 200px;
+        }
+    }
+}
+
 }
