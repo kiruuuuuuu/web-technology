@@ -56,12 +56,14 @@ aside{
 main{
     grid-area: main;
     display: grid;
-    width: 100%;
+    row-gap: 3vh;
+    margin: 20vh auto;
     
     img{
         height: 20px;
         width: 20px;
     }
+    
 }
 footer{
     grid-area: footer;
@@ -77,22 +79,13 @@ footer{
         text-decoration: none;
     }
 }
-button{
-    display: block;
+button ,input{
     height: 7vh;
-    width: 50%;
-    border-radius: 10px;
-    margin: 0 auto;
+    width: 40vw;
+    border-radius: 50px;
+    text-align: center;
     cursor: pointer;
     transition: all .8s;
-}
-input{
-    display: block;
-    height: 7vh;
-    padding: 2vh 5vw;
-    width: 70%;
-    margin: 0 auto;
-    border-radius: 10px;
 }
 .meta{
         display: flex;
@@ -107,4 +100,13 @@ button:active{
     color: white;
     transform: scale(1.2);
 }
+.btn{
 
+        border: solid 0px white;
+        display: block;
+        text-align: center;
+        a{
+             text-decoration: none;
+        }
+        
+    }
