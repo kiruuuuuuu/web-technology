@@ -1,0 +1,63 @@
+*{
+    margin: 0;padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+/* .container{
+    display: grid;
+    grid-template-areas: 
+    "head head"
+    "main main"
+    "footer footer";
+    grid-template-rows: 20vh 100vh 30vh;
+  
+} */
+.container{
+    border: solid 1px black;
+    position: sticky;
+    height: 10vh;
+    top: 0;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.349);
+   
+    .logo{
+        height: 50px;
+        width: 50px;
+    }
+    ul{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    li{
+        list-style-type: none;
+    }
+    a{
+        text-decoration: none;
+    }
+}
+.main{
+    border: solid 0px black;
+    height: 100vh;
+    width: 100%;
+    background: url(./images/stevepb-drink-462776.jpg) no-repeat fixed center/cover;
+    .circle{
+        border: solid 1px red;
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        background: yellow;
+    }
+    
+    .circle1{
+        margin: auto 1vw;
+        border: solid 1px yellow;
+        background: red;
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+
+    }
+}
+.footer{
+}

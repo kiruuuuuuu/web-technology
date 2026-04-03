@@ -98,7 +98,7 @@ button:hover{
 button:active{
     background: green;
     color: white;
-    transform: scale(1.2);
+    transform: scale(.9);
 }
 .btn{
 
@@ -110,3 +110,8 @@ button:active{
         }
 }
 
+@media (min-width: 1px) and (max-width: 576px){
+    aside{
+        display: none;
+    }
+}

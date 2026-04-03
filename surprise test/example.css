@@ -1,0 +1,109 @@
+*{
+    margin: 0;padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    background: none;
+    display: grid;
+    grid-template-areas: 
+    "head head"
+    "main main"
+    "container container"
+    "footer1 footer1"
+    "footer2 footer2";
+    grid-template-rows: 20vh 100vh 50vh 30vh 30vh;
+}
+header{
+    background:rgba(0, 0, 0, 0.226);
+    grid-area: head;
+    position: fixed;
+    width: 100%;
+    top:0;
+
+    ul{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        list-style: none;
+        margin: 5vh 0;
+    }
+    li{
+        a{
+            text-decoration: none;
+            font-size: 20px;
+            color: white;
+            font-weight: bold;
+            transform: scale(1.1);
+        }
+        a:hover{
+            transition: all 2s;
+            color: red;
+        }
+    };
+}
+
+main{
+    background: url(./images/img1.jpg) no-repeat center/cover;
+    grid-area: main;
+    .circle{
+        margin: 70vh auto;
+        align-items: right;
+        box-shadow: 0px 0px 10px 5px gray;
+
+    }
+    .box1{
+        border: none;
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        background: yellow; 
+    }
+    .box2{
+        border: none;
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        background: maroon;
+        margin-left: 1vw;
+    }
+    h1{
+        text-align: center;
+        color: white;
+        font-size: 30px;
+        padding-top: 5vh;
+    }
+}
+
+container{
+grid-area: container;
+background: whitesmoke;
+.box{
+    ul{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        column-gap: 2vw;
+        list-style: none;
+        padding: 5vh 5vw;
+    };
+    h1{
+        font-size: 40px;
+        color: rgb(196, 7, 39);
+    }
+    p{
+        font-size: 20px;
+        color: palevioletred;
+    }
+}
+}
+
+footer1{
+    background: green;
+    grid-area: footer1;
+}
+
+footer2{
+    background: goldenrod;
+    grid-area: footer2;
+}
