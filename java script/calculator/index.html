@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <h1>CALCULATOR</h1>
+    <div class="container">
+        <div class="top">
+            <input type="text" class="input" onclick="getvalue(event)" >
+        </div>
+        <div class="bottom">
+            <button onclick="getvalue(event)">1</button>
+            <button onclick="getvalue(event)">2</button>
+            <button onclick="getvalue(event)">3</button>
+            <button class="btnclr" onclick="getvalue(event)">+</button>
+
+            <button onclick="getvalue(event)">4</button>
+            <button onclick="getvalue(event)">5</button>
+            <button onclick="getvalue(event)">6</button>
+            <button class="btnclr" onclick="getvalue(event)">-</button>
+
+            <button onclick="getvalue(event)">7</button>
+            <button onclick="getvalue(event)">8</button>
+            <button onclick="getvalue(event)">9</button>
+            <button class="btnclr" onclick="getvalue(event)">*</button>
+
+            <button onclick="getvalue(event)">0</button>
+            <button onclick="getvalue(event)">.</button>
+            <button class="btnclr" onclick="calculate()">=</button>
+            <button class="btnclr" onclick="getvalue(event)">/</button>
+
+            <button class="btnclr" onclick="input.value=''">CE</button>
+            <button class="btnclr" onclick="input.value=input.value.slice(0,-1)">C</button>
+            <button class="btnclr" onclick="getvalue(event)">%</button>
+        </div>
+    </div>
+<script src="./script.js"></script>
+</body>
+
+</html>

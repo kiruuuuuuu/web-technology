@@ -1,174 +1,250 @@
-// // wap to print only even numbers from array using for loop & result store it in result array
-// // (note:without using any inbuilt method)
+// // WAP to print only even numbers from array using for loop and reult store it in array(Note:without using inbilt function)
+let arrr=[10,15,20,25,30,35]
+console.log(arrr);
+let result=[]
+for(let i=0; i<arrr.length; i++ ){
+    if(arrr[i]%2==0)
+        result[result.length]=arrr[i]
+}  
+console.log(result);
 
-// let arr=[10,15,20,25,30,35]
-// console.log(arr)
+//-----------------------------------------------------------------------------------------------------------------//
 
-// let resarr=[]
-// for(let i=0; i<arr.length;i++){
-//     if(arr[i]%2==0)
-//         resarr[resarr.lenght]=arr[i]
-// } 
-// console.log(resarr);
+// for odd numbers
+let a=[10,15,20,25,30,35]
+console.log(a);
+let res=[]
+for(let i=0; i<a.length; i++){
+    if(a[i]%2==1)
+         res[res.length]=a[i]
+ }
+console.log(res)
 
-// let arr1=[10,15,20,25,30,35]
-// console.log(arr1)
+//-----------------------------------------------------------------------------------------------------------------//
 
-// let res1arr=[]
-// for(let i=0;i<arr.length;i++){
-//     if(arr[i]%2==1)
-//         res1arr[res1arr.length]=arr[i]
-// }
-// console.log(res1arr)
+// for in & for off
+let arr1=[10,15,20]
+console.log(arr1);
+console.warn("using for in loop")
+for (let key in arr1)
+    console.log(key)
 
-// // for in and for off loop
-// let arr2=[10,15,20,25,30,35]
-// console.log(arr2)
+//-----------------------------------------------------------------------------------------------------------------//
 
-// console.warn('for-in loop')
-// for(let key in arr2){
-//     console.log(key)
-// }
+console.warn('Using for of loop')
+for (let key of arr1){
+   console.log(key)
+ }
 
-// console.warn('for-of loop')
-// for(let key of arr2){
-//     console.log(key)
-// }
-//  console.warn('using foreach method')
-//  arr.forEach((elem,index)=>{
-//     console.log(elem)
-//     console.log(index)
-//  })
+ //-----------------------------------------------------------------------------------------------------------------//
 
-let arr4 = [7, 3, 5, 6, 1, 2, 8, 4, 9]
-console.log(arr4)
+console.warn('Using for each method')
+arr1.forEach((Elem,index)=>{
+console.log(index);
+})
 
-let res1 = []
+//-----------------------------------------------------------------------------------------------------------------//
+
+// Print square numbers
+let arr=[7,3,5,6,1,2,8,4,9]
+console.log(arr);
+let res1=[];
 console.warn('for loop')
-for (let i = 0; i < arr4.length; i++) {
-    let res = arr4[i] * arr4[i]
-    res1[res1.length] = res
+for (let i=0;i<arr.length;i++){
+    let res=arr[i]*arr[i];
+    res1[res1.length]=res
 }
-console.log(res1)
+console.log(res1);
+
+//-----------------------------------------------------------------------------------------------------------------//
 
 console.warn('for-of loop')
-let res2 = [];
-for (let key of arr4) {
-    let res = key * key
-    res2[res2.length] = res
+let res2=[]
+for(let key of arr){
+    let res=key*key
+    res2[res2.length]=res
 }
 console.log(res2)
 
+//-----------------------------------------------------------------------------------------------------------------//
 
-console.warn('for each method')
-let res3 = [];
-arr4.forEach((elem) => {
-    res3[res3.length] = elem * elem
+console.warn('forEach loop')
+let res3=[]
+arr.forEach((ele)=>{
+    res3[res3.length]=ele*ele
 })
 console.log(res3)
 
+//-----------------------------------------------------------------------------------------------------------------//
+
 console.warn('map method')
-let res4 = arr4.map((elem) => {
-    return elem * elem
+let res4=arr.map((ele)=>{
+    return(ele*ele)
 })
 console.log(res4)
 
-let no = []
-for (let i = 1; i <= 10; i++) {
-    no[no.length] = i
+//-----------------------------------------------------------------------------------------------------------------//
+
+//Print 1 t0 10 and store it in array
+console.warn('')
+let res5=[]
+for(let a=0;a<=10;a++){
+    res5[res5.length]=a
 }
-console.log(no)
+console.log(res5)
 
+//-----------------------------------------------------------------------------------------------------------------//
 
-// mul table
-let mul = 2
-for (let i = 1; i <= 10; i++) {
-    console.log(`${mul}*${i}=${mul * i}`)
+console.warn('for loop')
+let num=9
+for(let i=1;i<=10;i++){
+    console.log(`${num} * ${i} = ${num*i}`)
 }
 
-console.warn('using for of')
-let mul1 = 3;
-for (let key of no) {
-    console.log(`${mul1} * ${key} = ${mul1 * key}`)
+//-----------------------------------------------------------------------------------------------------------------//
+
+console.warn('for-of loop')
+for(let key of res5){
+    console.log(`${num} * ${key} =${num*key}`)
 }
 
-console.log('for each')
-let mul2 = 5;
-no.forEach((elem) => {
-    console.log(`${mul2} * ${elem} = ${mul2 * elem}`)
+//-----------------------------------------------------------------------------------------------------------------//
+
+console.warn('forEach loop')
+res5.forEach((elem)=>{
+    console.log(`${num} * ${elem} = ${num*elem}`)
 })
 
+//-----------------------------------------------------------------------------------------------------------------//
 
 console.warn('map method')
-let mul3 = 8;
-no.map((elem) => {
-    console.log(`${mul3} * ${elem} = ${mul3 * elem}`)
+let num1=5;
+res5.map((elem)=>{
+    console.log(`${num1} * ${elem} = ${num1*elem}`)
 })
 
+//-----------------------------------------------------------------------------------------------------------------//
 
-// print even no present in array
 
-console.warn('print even no in array using for loop')
-let arr5 = [7, 3, 5, 6, 1, 2, 8, 4, 9]
-let res6 = [];
-for (let i = 0; i < arr5.length; i++) {
-    if (arr5[i] % 2 == 0) {
-        let res = arr5[i];
-        res6[res6.length] = res
+console.warn('')
+let array=[4,7,6,2,5,1,9,8,3]
+console.log(array)
+
+//-----------------------------------------------------------------------------------------------------------------//
+
+// Print only even numbers from array and store it in array
+console.warn('for loop')    
+let r1=[]
+for(let i=0;i<array.length;i++){
+    if(array[i]%2==0){
+        r1[r1.length]=array[i]
     }
 }
-console.log(res6)
+console.log(r1)
 
-console.warn('print even no in array using for for in method')
-let res7 = []
-for (let key of arr5) {
-    if (key % 2 == 0)
-        res7[res7.length] = key
+//-----------------------------------------------------------------------------------------------------------------//
+
+console.warn('for-of loop')
+let r3=[]
+for(let key of array){
+    if(key%2==0){
+        r3[r3.length]=key
+    }
 }
-console.log(res7)
+console.log(r3)   
 
-console.warn('print even no in array using for for-each method')
+//-----------------------------------------------------------------------------------------------------------------//
 
-res8 = []
-arr5.forEach((elem) => {
-    if (elem % 2 == 0)
-        res8[res8.length] = elem
+console.warn('forEach loop')
+let r5=[]
+array.forEach((elem)=>{
+    if(elem%2==0){
+        r5[r5.length]=elem
+    }
 })
-console.log(res8)
+console.log(r5)   
 
-console.warn('print even no in array using for map method')
-let even = arr5.map((elem) => {
-    return (elem % 2 == 0)
+//-----------------------------------------------------------------------------------------------------------------//
+
+console.warn('map method')
+let even=array.map((elem)=>{
+   return( elem%2==0);
 })
 console.log(even)
 
+//-----------------------------------------------------------------------------------------------------------------//
+
+
 console.warn('filter method')
-let even1 = arr5.filter((elem) => {
-    return (elem % 2 == 0)
+let even1=array.filter((elem)=>{
+   return( elem%2==0);
 })
 console.log(even1)
 
+//-----------------------------------------------------------------------------------------------------------------//
 
-// special behaviour of arrow function
-let arrow1 = () => console.log('hello') // if we have only one statement in function body we can avoid using flower brackets.
+// Special behavior of arrow key
+
+let arrow1=()=> console.log("Hello")
 arrow1()
 
-let arrow2 = () => fname => {
-    console.log(fname) // if we have only one parameter in function we can avoid using paranthesis
-}
-arrow2('Alice')
+//-----------------------------------------------------------------------------------------------------------------//
 
-let arrow3 = _ => {
-    console.log('hello') // if we have no parameter in function we can use underscore as parameter
+let arrow2 = fname=>{
+    console.log(`Hello ${fname}`)
+}
+arrow2("Dinga")
+
+//-----------------------------------------------------------------------------------------------------------------//
+
+let arrow3=_=>{
+    console.log("Hello")
 }
 arrow3()
 
-let arrow4 = () => 'hello' // if we have only return statement in function body we can avoid using flower brackets and return keyword these 2 are optional
-arrow4()
+//-----------------------------------------------------------------------------------------------------------------//
 
-// example program for special behaviour of arrow function
-// wap to check even or odd number using arrow function with parameter and return statement
-let evenodd = num => num % 2 == 0 ? 'even' : 'odd'
-console.log(evenodd(10))
-console.log(evenodd(15))
+let arrow4=()=>'Hello'
+console.log(arrow4())
+
+//-----------------------------------------------------------------------------------------------------------------//
+
+//WAP to check even / odd number using arrow function with parameter and return type
+let evenOdd=(num)=>num%2==0?"Even":"Odd"
+console.log(evenOdd(20))
+
+//-----------------------------------------------------------------------------------------------------------------//
+
+// Reduce method
+// WAP to print large using reduce method
+let ar=[2,4,3,7,5]
+console.log(ar)
+let r=ar.reduce((preval,curval)=>{
+    let sum=preval+curval
+    return sum
+})
+console.log(r)
+
+//-----------------------------------------------------------------------------------------------------------------//
+
+// WAP to print large number using reduce method
+let array1=[2,4,3,7,5]
+console.log(array1)
+let large=array1.reduce((preval,curval)=>{
+    return preval>curval?preval:curval
+})
+console.log(large)
+
+//-----------------------------------------------------------------------------------------------------------------//
+
+
+
+
+
+
+
+
+
+
+
 
