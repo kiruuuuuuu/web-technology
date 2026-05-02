@@ -53,10 +53,11 @@ console.log(`${person1.fname1} age is ${person1.age1}`)
 
 // Update the object
 let {fname1,lname1,age1}=person1
+person1.age1=25
 console.log(`${fname1}${lname1} age is ${age1}`)
 
 // Delete the object
-delete person1.lname2
+delete person1.lname1
 console.log(person1)
 
 // Nested object

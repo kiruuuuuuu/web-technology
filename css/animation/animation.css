@@ -132,7 +132,7 @@
     align-items: center;
 
      /*liner for not delaying the animation and reverse for rotating in opposite direction */
-    animation: loading 3s infinite linear reverse; 
+    animation: loading 3s infinite linear reverse;
 }
 @keyframes loading {
     0%{
